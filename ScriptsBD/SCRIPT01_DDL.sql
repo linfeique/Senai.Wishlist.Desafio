@@ -1,7 +1,7 @@
 /* Arquivo de criação de dados*/
 
 
-create database senaiWishlistDesafio;
+create database senaiWishlistDesafio
 
 create table USUARIOS (
 	ID int identity primary key
