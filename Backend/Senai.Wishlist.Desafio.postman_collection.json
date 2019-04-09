@@ -1,0 +1,254 @@
+{
+	"info": {
+		"_postman_id": "231330ab-f951-4338-9d29-770f4f2969b7",
+		"name": "Senai.Wishlist.Desafio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Listar Usuários",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGVuYUBob3RtYWlsLmNvbSIsImp0aSI6IjMiLCJleHAiOjE1NTQ3NTU2MjYsImlzcyI6Ildpc2hsaXN0LldlYkFwaSIsImF1ZCI6Ildpc2hsaXN0LldlYkFwaSJ9.pzZVW7BXh_9NLy8nNW2CK7HFocosIyAaC7TJv8R5szo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Usuários",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"teste@teste.com\",\n\t\"senha\": \"12345\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/usuarios",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Usuários",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"4\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/usuarios/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"usuarios",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Desejos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGVuYUBob3RtYWlsLmNvbSIsImp0aSI6IjMiLCJleHAiOjE1NTQ3NTU2MjYsImlzcyI6Ildpc2hsaXN0LldlYkFwaSIsImF1ZCI6Ildpc2hsaXN0LldlYkFwaSJ9.pzZVW7BXh_9NLy8nNW2CK7HFocosIyAaC7TJv8R5szo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/desejos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"desejos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Desejos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImhlbGVuYUBob3RtYWlsLmNvbSIsImp0aSI6IjMiLCJleHAiOjE1NTQ3NDQ0ODgsImlzcyI6Ildpc2hsaXN0LldlYkFwaSIsImF1ZCI6Ildpc2hsaXN0LldlYkFwaSJ9.byPrKJxtiHZ92tIsGvuyQ5gaioc-ychtHYW-epiuz-M",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"desejo\": \"só um testezinho\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/desejos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"desejos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Desejos",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJleHAiOjE1NTQ2MTc1MTYsImlzcyI6Ildpc2hsaXN0LldlYkFwaSIsImF1ZCI6Ildpc2hsaXN0LldlYkFwaSJ9.qhWeBXWCrWLueQIi9j4XSdWcYhdKAdH1uixts3b-BBI",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/desejos/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"desejos",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"helena@hotmail.com\",\n\t\"senha\": \"987654\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
