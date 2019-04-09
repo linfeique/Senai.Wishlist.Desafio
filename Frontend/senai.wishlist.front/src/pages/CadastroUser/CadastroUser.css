@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli';
+  }
+  
+  #background{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./assets/images/fundo.jpg);
+    background-size: cover;
+    background-position: center; 
+    filter: blur(5px);
+    position: absolute;
+    left:0;
+    top: 0;
+  }
+  
+  #opac{
+   height: 100vh;
+    width: 100vw;
+    background-color: #000000;
+    opacity: 0.7;
+    display: flex;
+  }
+  
+  .inputboxshadow{
+    height: 621px;
+    width: 579px;
+    background-color: #FFFFFF;
+    margin: auto;
+    border-radius: 1em;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .inputs{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 12em;
+    margin-bottom: 2em;
+  }
+  
+  .inputs hr{
+    width: 80%;
+    height: 2px;
+    margin-bottom: 1em;
+    background-color: #000000;
+    border-color: #000000;
+  }
+  
+  .inputs input{
+    background-color: #cccccc;
+    opacity: 0.5;
+    border-radius: 0.5em;
+    border: none;
+    margin-top: 1em;
+    padding-left: 1em;
+    font-size: 1.2em;
+  }
+  
+  .email {
+    width: 60%;
+    margin-bottom: 1em;
+  }
+  
+  .senha {
+    width: 60%;
+    margin-bottom: 1em;
+  }
+  
+  #input::placeholder {
+    color: #212121;
+  }
+  
+  input[type="email"]{
+    height: 100%;
+    width: 100%;
+    color: black;
+    opacity: 1;
+  }
+  
+  input[type="password"]{
+    height: 100%;
+    width: 100%;
+    color: black;
+    opacity: 1;
+  }
+  
+  .btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 6em;
+  }
+  
+  .btn hr{
+    width: 80%;
+    background-color: #000000;
+    height: 2px;
+    margin-bottom: 1em;
+    border-color: #000000;
+  }
+  
+  .btn button {
+    color: #eee8e8;
+    height: 2.5em;
+    width: 8em;
+    border-radius: 0.5em;
+    border: none;
+    font-size: 20px;
+    background-color: #000000;
+  }

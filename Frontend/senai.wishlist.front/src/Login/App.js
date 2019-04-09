@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import logo from './assets/images/wishlist.svg';
 import Axios from 'axios';
+import ReactDOM from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 export default class App extends Component {
   constructor(){
@@ -37,45 +39,45 @@ export default class App extends Component {
     })
 }
 
-  render() {
-    return (
+render() {
+  return (
       <div>
-        <div id="background"></div>
+          <div id="background"></div>
           <div id="opac">
-            <form onSubmit={this.efetuaLogin.bind(this)} className="inputboxshadow">
-                <div className="circulo">
-                  <img src={logo} alt="Logo"/>
-                </div>
-                <div className="inputs">
-                  <hr/>
-                  <span>Seja bem-vindo ao WishList</span>
-                  <div className="email">
-                    <input
-                    id="input"
-                    type="email"
-                    placeholder="E-mail"
-                    value={this.state.email}
-                    onChange={this.atualizaEstadoEmail.bind(this)}
-                    />
+              <form onSubmit={this.efetuaLogin.bind(this)} className="inputboxshadow">
+                  <div className="circulo">
+                      <img src={logo} alt="Logo" />
                   </div>
-                  <div className="senha">
-                    <input
-                    id="input" 
-                    type="password"
-                    placeholder="Senha"
-                    value={this.state.senha}
-                    onChange={this.atualizaEstadoSenha.bind(this)}
-                    />
+                  <div className="inputs">
+                      <hr />
+                      <span>Seja bem-vindo ao WishList</span>
+                      <div className="email">
+                          <input
+                              id="input"
+                              type="email"
+                              placeholder="E-mail"
+                              value={this.state.email}
+                              onChange={this.atualizaEstadoEmail.bind(this)}
+                          />
+                      </div>
+                      <div className="senha">
+                          <input
+                              id="input"
+                              type="password"
+                              placeholder="Senha"
+                              value={this.state.senha}
+                              onChange={this.atualizaEstadoSenha.bind(this)}
+                          />
+                      </div>
                   </div>
-                </div>
-                <div className="btn">
-                  <hr/>
-                  <span>Não tem conta no sistema ainda? <a href="#">Clique Aqui!</a></span>
-                  <button type="submit">Entrar</button>
-                </div>
-            </form>
+                  <div className="btn">
+                      <hr />
+                      <span>Não tem conta no sistema ainda? <Link to="/cadastro">Clique Aqui!</Link></span>
+                      <button type="submit">Entrar</button>
+                  </div>
+              </form>
           </div>
-        </div>
-    );
-  }
+      </div>
+  );
+}
 }
