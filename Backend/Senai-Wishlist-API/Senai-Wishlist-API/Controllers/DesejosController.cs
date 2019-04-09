@@ -43,7 +43,7 @@ namespace Senai.Wishlist.API.Controllers
                     return BadRequest();
                 }
 
-                return Ok(desejoRepositorio.Listar().Where(x => x.Id == usuarioProc.Id));
+                return Ok(desejoRepositorio.Listar().Where(x => x.IdUsuario == usuarioProc.Id).ToList());
             }
             catch (Exception ex)
             {
@@ -56,6 +56,9 @@ namespace Senai.Wishlist.API.Controllers
         {
             try
             {
+                int id_usuario = Convert.ToInt32(HttpContext.User.Claims.First(x => x.Type == JwtRegisteredClaimNames.Jti).Value);
+
+                desejo.IdUsuario = id_usuario;
                 desejo.DataCriacao = DateTime.Now;
                 desejoRepositorio.Cadastrar(desejo);
                 return Ok();

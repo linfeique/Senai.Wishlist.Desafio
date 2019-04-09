@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Newtonsoft.Json;
-using Swashbuckle.AspNetCore.Swagger;
 
 namespace Senai_Wishlist_API
 {
@@ -25,10 +24,11 @@ namespace Senai_Wishlist_API
                 })
                 .SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
 
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new Info { Title = "Wishlist", Version = "v1" });
-            });
+            
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new Info { Title = "Wishlist", Version = "v1" });
+            //});
 
             services.AddAuthentication(options =>
             {
@@ -65,7 +65,12 @@ namespace Senai_Wishlist_API
 
             app.UseAuthentication();
 
-            app.UseSwagger();
+            //app.UseSwagger();
+
+            //app.UseSwaggerUI(c =>
+            //{
+            //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "SviGufo API");
+            //});
 
             app.UseMvc();
         }
