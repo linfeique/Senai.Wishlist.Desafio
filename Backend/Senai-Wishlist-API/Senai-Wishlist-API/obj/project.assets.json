@@ -8000,6 +8000,51 @@
         "version.txt"
       ]
     },
+<<<<<<< HEAD
+=======
+    "SwashBuckle.AspNetCore.MicrosoftExtensions/0.5.0": {
+      "sha512": "WLq9iHrVsS93S72zLOge1p1wMnNwbcJralLJ0WjgmgH9x7YMreqvittsCP2lMii5EeZ4ord1crPZ6zjhk5+A3g==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.microsoftextensions/0.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.6/SwashBuckle.AspNetCore.MicrosoftExtensions.dll",
+        "swashbuckle.aspnetcore.microsoftextensions.0.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.microsoftextensions.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/1.0.0": {
+      "sha512": "vL/X/HH4ddfYV7ZjZU+fAPTNPF1FPCKfrmrm/kClEzs7pRrUx8jd6LX+XeYxoToRGO/azuZemWrznL1sFiiF/g==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.1.0.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/1.0.0": {
+      "sha512": "8UsSaR950i4arCFk5QaWvhd+FSH27BpGcoOMTfcx0Z/FROe5QE0MNtgtgp0MFxkJQiFlP9YXGVM5I5/xMmPzxw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.1.0.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+>>>>>>> ac95517e9ca01ecbc497847700427255fb6f28ae
     "System.AppContext/4.3.0": {
       "sha512": "fKC+rmaLfeIzUhagxY17Q9siv/sPrjjKcfNg1Ic8IlQkZLipo8ljcaZQu4VtI4Jqbzjc2VTjzGLF6WmsRXAEgA==",
       "type": "package",
@@ -12535,23 +12580,39 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\44846245837\\.nuget\\packages\\": {},
+=======
+    "C:\\Users\\28725446827\\.nuget\\packages\\": {},
+>>>>>>> ac95517e9ca01ecbc497847700427255fb6f28ae
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\44846245837\\Desktop\\Senai.Wishlist.Desafio\\Backend\\Senai-Wishlist-API\\Senai-Wishlist-API\\Senai.Wishlist.API.csproj",
       "projectName": "Senai.Wishlist.API",
       "projectPath": "C:\\Users\\44846245837\\Desktop\\Senai.Wishlist.Desafio\\Backend\\Senai-Wishlist-API\\Senai-Wishlist-API\\Senai.Wishlist.API.csproj",
       "packagesPath": "C:\\Users\\44846245837\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\44846245837\\Desktop\\Senai.Wishlist.Desafio\\Backend\\Senai-Wishlist-API\\Senai-Wishlist-API\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\28725446827\\Desktop\\Senai.Wishlist.Desafio\\Backend\\Senai-Wishlist-API\\Senai-Wishlist-API\\Senai.Wishlist.API.csproj",
+      "projectName": "Senai.Wishlist.API",
+      "projectPath": "C:\\Users\\28725446827\\Desktop\\Senai.Wishlist.Desafio\\Backend\\Senai-Wishlist-API\\Senai-Wishlist-API\\Senai.Wishlist.API.csproj",
+      "packagesPath": "C:\\Users\\28725446827\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\28725446827\\Desktop\\Senai.Wishlist.Desafio\\Backend\\Senai-Wishlist-API\\Senai-Wishlist-API\\obj\\",
+>>>>>>> ac95517e9ca01ecbc497847700427255fb6f28ae
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\44846245837\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\28725446827\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> ac95517e9ca01ecbc497847700427255fb6f28ae
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

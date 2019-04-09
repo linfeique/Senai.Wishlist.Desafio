@@ -3598,6 +3598,30 @@
       "path": "nuget.frameworks/4.7.0",
       "hashPath": "nuget.frameworks.4.7.0.nupkg.sha512"
     },
+<<<<<<< HEAD
+=======
+    "SwashBuckle.AspNetCore.MicrosoftExtensions/0.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WLq9iHrVsS93S72zLOge1p1wMnNwbcJralLJ0WjgmgH9x7YMreqvittsCP2lMii5EeZ4ord1crPZ6zjhk5+A3g==",
+      "path": "swashbuckle.aspnetcore.microsoftextensions/0.5.0",
+      "hashPath": "swashbuckle.aspnetcore.microsoftextensions.0.5.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vL/X/HH4ddfYV7ZjZU+fAPTNPF1FPCKfrmrm/kClEzs7pRrUx8jd6LX+XeYxoToRGO/azuZemWrznL1sFiiF/g==",
+      "path": "swashbuckle.aspnetcore.swagger/1.0.0",
+      "hashPath": "swashbuckle.aspnetcore.swagger.1.0.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8UsSaR950i4arCFk5QaWvhd+FSH27BpGcoOMTfcx0Z/FROe5QE0MNtgtgp0MFxkJQiFlP9YXGVM5I5/xMmPzxw==",
+      "path": "swashbuckle.aspnetcore.swaggergen/1.0.0",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.1.0.0.nupkg.sha512"
+    },
+>>>>>>> ac95517e9ca01ecbc497847700427255fb6f28ae
     "System.Composition/1.0.31": {
       "type": "package",
       "serviceable": true,
