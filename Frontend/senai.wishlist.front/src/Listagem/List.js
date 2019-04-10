@@ -8,8 +8,7 @@ export default class List extends Component{
 
         this.state ={
             desejo: '',
-            lista: [],
-            token: ''
+            lista: []
         }
     }
 
