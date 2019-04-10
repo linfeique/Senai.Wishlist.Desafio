@@ -36,8 +36,8 @@ export default class Cadastro extends Component {
                 <div id="background"></div>
                 <div id="opac">
                     <form onSubmit={this.cadastrarUsuario.bind(this)} className="inputboxshadow">
+                        <h1>Cadastre-se</h1>
                         <div className="inputs">
-                            <hr />
                             <div className="email">
                                 <input
                                     id="input"

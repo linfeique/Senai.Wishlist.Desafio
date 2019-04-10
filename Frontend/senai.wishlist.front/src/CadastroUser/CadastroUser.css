@@ -26,13 +26,14 @@
   }
   
   .inputboxshadow{
-    height: 621px;
-    width: 579px;
+    height: 45%;
+    width: 45%;
     background-color: #FFFFFF;
     margin: auto;
     border-radius: 1em;
     display: flex;
     flex-direction: column;
+    justify-content:space-evenly;
   }
   
   .inputs{
@@ -44,12 +45,11 @@
     margin-bottom: 2em;
   }
   
-  .inputs hr{
-    width: 80%;
-    height: 2px;
-    margin-bottom: 1em;
-    background-color: #000000;
-    border-color: #000000;
+  .inputboxshadow h1 {
+    font-size: 3em;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
   
   .inputs input{
