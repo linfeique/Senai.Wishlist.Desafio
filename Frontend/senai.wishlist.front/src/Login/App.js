@@ -30,7 +30,7 @@ export default class App extends Component {
     })
     .then(data=>{
         localStorage.setItem("user-wishlist", data.data.token);
-        this.props.history.push('/cadastro');
+        this.props.history.push('/lista');
         console.log(data);
     })
     .catch(erro=>{
