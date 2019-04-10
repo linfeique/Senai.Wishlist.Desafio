@@ -65,7 +65,7 @@ export default class List extends Component{
                         {
                             this.state.lista.map(function(desejo){
                                 return (
-                                    <li>
+                                    <li key={desejo.id}>
                                         {desejo.desejo}
                                     </li>
                                 );
