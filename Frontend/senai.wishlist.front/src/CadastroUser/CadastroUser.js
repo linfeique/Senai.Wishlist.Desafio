@@ -37,10 +37,10 @@ export default class Cadastro extends Component {
             <div>
                 <div id="background"></div>
                 <div id="opac">
-                    <form onSubmit={this.cadastrarUsuario.bind(this)} className="inputboxshadow">
+                    <form onSubmit={this.cadastrarUsuario.bind(this)} className="cadastro-inputboxshadow">
                         <h1>Cadastre-se</h1>
-                        <div className="inputs">
-                            <div className="email">
+                        <div className="cadastro-inputs">
+                            <div className="cadastro-email">
                                 <input
                                     id="input"
                                     type="email"
@@ -49,7 +49,7 @@ export default class Cadastro extends Component {
                                     onChange={this.atualizaEstadoEmail.bind(this)}
                                 />
                             </div>
-                            <div className="senha">
+                            <div className="cadastro-senha">
                                 <input
                                     id="input"
                                     type="password"

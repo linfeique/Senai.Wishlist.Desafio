@@ -5,7 +5,7 @@
     font-family: 'Muli';
   }
   
-  #background{
+    #background{
     height: 100vh;
     width: 100vw;
     background-image: url(../Login/assets/images/fundo.jpg);
@@ -25,7 +25,7 @@
     display: flex;
   }
   
-  .inputboxshadow{
+  .cadastro-inputboxshadow{
     height: 45%;
     width: 45%;
     background-color: #FFFFFF;
@@ -36,7 +36,7 @@
     justify-content:space-evenly;
   }
   
-  .inputs{
+  .cadastro-inputs{
     display: flex;
     justify-content:space-around;
     align-items: center;
@@ -45,14 +45,14 @@
     margin-bottom: 2em;
   }
   
-  .inputboxshadow h1 {
+  .cadastro-inputboxshadow h1 {
     font-size: 3em;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 20px;
   }
   
-  .inputs input{
+  .cadastro-inputs input{
     background-color: #cccccc;
     opacity: 0.5;
     border-radius: 0.5em;
@@ -62,12 +62,12 @@
     font-size: 1.2em;
   }
   
-  .email {
+  .cadastro-email {
     width: 60%;
     margin-bottom: 1em;
   }
   
-  .senha {
+  .cadastro-senha {
     width: 60%;
     margin-bottom: 1em;
   }
