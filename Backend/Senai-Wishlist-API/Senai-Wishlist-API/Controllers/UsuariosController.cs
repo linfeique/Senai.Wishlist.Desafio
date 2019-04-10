@@ -15,7 +15,6 @@ namespace Senai.Wishlist.API.Controllers
     [Route("api/[controller]")]
     [Produces("application/json")]
     [ApiController]
-    [Authorize]
     public class UsuariosController : ControllerBase
     {
 
@@ -27,6 +26,7 @@ namespace Senai.Wishlist.API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult ListarUsuarios()
         {
             try
@@ -54,6 +54,7 @@ namespace Senai.Wishlist.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize]
         public IActionResult Deletar(int id)
         {
             try

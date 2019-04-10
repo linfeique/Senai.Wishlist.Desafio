@@ -22,11 +22,13 @@ export default class Cadastro extends Component {
     cadastrarUsuario(event) {
         event.preventDefault();
 
-        Axios.post('http://localhost:5000/api/usuarios/', {
+        Axios.post('http://192.168.56.1:5000/api/usuarios/', {
             email: this.state.email,
             senha: this.state.senha
         })
-            .then(data => console.log(data))
+            .then(data => {
+                this.props.history.push('/');
+            })
             .catch(erro => console.log(erro))
     }
 
