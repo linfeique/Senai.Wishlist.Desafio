@@ -8,7 +8,8 @@ export default class List extends Component{
 
         this.state ={
             desejo: '',
-            lista: []
+            lista: [],
+            token: ''
         }
     }
 
@@ -32,9 +33,18 @@ export default class List extends Component{
     }
 
     listarDesejos(){
-        axios.get('http://localhost:5000/api/desejos')
+
+        const teste = localStorage.getItem('user-wishlist');
+
+        fetch('http://192.168.56.1:5000/api/desejos', {
+            method: 'GET',
+            headers: {
+                "Authorization": "Bearer "+ teste 
+            }
+        })
+        .then(resposta => resposta.json())
         .then(data => this.setState({lista : data}))
-        .catch(erro => console.log("Erro: ", erro))
+        .catch(erro => console.log(erro))
     }
 
     componentDidMount(){
