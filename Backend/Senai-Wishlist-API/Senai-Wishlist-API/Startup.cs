@@ -74,7 +74,7 @@ namespace Senai_Wishlist_API
 
             app.UseAuthentication();
 
-            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+            app.UseCors("CorsPolicy");
 
             //app.UseSwagger();
 
