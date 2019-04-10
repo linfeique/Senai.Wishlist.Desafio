@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker';
 import {Route, BrowserRouter as Router, Switch, Redirect} from 'react-router-dom';
 import { usuarioAutorizado } from './services/auth';
 import list from './Listagem/List';
+import register from './CadastroUser/CadastroUser';
 
 const Permissao = ({component : Component}) => (
     <Route 
@@ -22,6 +23,7 @@ const rotas = (
             <Switch>
                 <Route exact path="/" component={App}/>
                 <Permissao path="/lista" component={list}/>
+                <Route path="/cadastro" component={register} />
             </Switch>
         </div>
     </Router>

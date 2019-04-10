@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
-class List extends Comment{
+export default class List extends Component{
 
     constructor(){
         super();
@@ -19,7 +19,7 @@ class List extends Comment{
             desejo: this.state.desejo
         })
         .then(data => {
-            listarDesejos();
+            this.listarDesejos();
             console.log(data);
         })
         .catch(erro => {
@@ -35,6 +35,10 @@ class List extends Comment{
         axios.get('http://localhost:5000/api/desejos')
         .then(data => this.setState({lista : data}))
         .catch(erro => console.log("Erro: ", erro))
+    }
+
+    componentDidMount(){
+        this.listarDesejos();
     }
 
     render() {

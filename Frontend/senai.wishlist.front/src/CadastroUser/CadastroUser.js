@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './CadastroUser.css';
 
 export default class Cadastro extends Component {

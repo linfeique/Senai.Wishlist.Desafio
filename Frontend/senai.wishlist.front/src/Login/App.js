@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import logo from './assets/images/wishlist.svg';
 import Axios from 'axios';
-import ReactDOM from 'react-router-dom';
 import {Link} from 'react-router-dom';
 
 export default class App extends Component {
@@ -25,7 +24,7 @@ export default class App extends Component {
   efetuaLogin(event){
     event.preventDefault();
 
-    Axios.post('http://localhost:5000/api/login', {
+    Axios.post('http://192.168.1.103:5000/api/login', {
         email : this.state.email,
         senha : this.state.senha    
     })
