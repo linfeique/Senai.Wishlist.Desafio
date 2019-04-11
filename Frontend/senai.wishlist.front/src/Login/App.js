@@ -24,7 +24,7 @@ export default class App extends Component {
   efetuaLogin(event){
     event.preventDefault();
 
-    Axios.post('http://192.168.56.1:5000/api/login', {
+    Axios.post('http://localhost:5000/api/login', {
         email : this.state.email,
         senha : this.state.senha    
     })

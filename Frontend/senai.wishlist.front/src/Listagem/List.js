@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import jwt_decode from 'jwt-decode';
 
 export default class List extends Component{
 
@@ -15,16 +16,17 @@ export default class List extends Component{
     cadastrarDesejo(event){
         event.preventDefault();
 
-        axios.post('http://localhost:5000/api/desejos' ,{
-            desejo: this.state.desejo
+        fetch('http://localhost:5000/api/desejos', {
+            method: "POST",
+            body: JSON.stringify({desejo : this.state.desejo}),
+            headers: {
+                "Content-Type": "application/json",
+                "Authorization": "Bearer " + localStorage.getItem("user-wishlist")
+            }
         })
-        .then(data => {
-            this.listarDesejos();
-            console.log(data);
-        })
-        .catch(erro => {
-            console.log("Erro: ", erro);
-        })
+        .then(resposta => resposta)
+        .then(this.listarDesejos())
+        .catch(erro => console.log("Erro: ", erro))
     }
 
     atualizaEstado(event){
@@ -32,13 +34,10 @@ export default class List extends Component{
     }
 
     listarDesejos(){
-
-        const teste = localStorage.getItem('user-wishlist');
-
-        fetch('http://192.168.56.1:5000/api/desejos', {
+        fetch('http://localhost:5000/api/desejos', {
             method: 'GET',
             headers: {
-                "Authorization": "Bearer "+ teste 
+                "Authorization": "Bearer " + localStorage.getItem('user-wishlist') 
             }
         })
         .then(resposta => resposta.json())
@@ -57,16 +56,21 @@ export default class List extends Component{
                     
                 </div>
                 <form className="inputs" onSubmit={this.cadastrarDesejo.bind(this)}>
-                    <input type="text" placeholder="Escreva seu desejo" value={this.state.desejo} onChange={this.atualizaEstado}/>  
+                    <input type="text" placeholder="Escreva seu desejo" value={this.state.desejo} onChange={this.atualizaEstado.bind(this)}/>
+                    <button type="submit">Enviar</button>
                 </form>
                 <div className="lista">
                     <ul>
                         {
                             this.state.lista.map(function(desejo){
+                                const teste = jwt_decode(localStorage.getItem("user-wishlist"));
+
                                 return (
-                                    <li key={desejo.id}>
-                                        {desejo.desejo}
-                                    </li>
+                                    <div key={desejo.id}>
+                                        <header>{teste.email}</header>
+                                        <main>{desejo.desejo}</main>
+                                        <footer>{desejo.dataCriacao}</footer>
+                                    </div>
                                 );
                             })
                         }

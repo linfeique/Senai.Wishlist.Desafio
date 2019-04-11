@@ -22,7 +22,7 @@ namespace Senai.Wishlist.API.Domains
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress;Initial Catalog=senaiWishlistDesafio;Persist Security Info=True;User Id=sa;Password=132");
+                optionsBuilder.UseSqlServer("Data Source=.\\SqlExpress;Initial Catalog=senaiWishlistDesafio;Persist Security Info=True;Integrated Security=true");
             }
         }
 
